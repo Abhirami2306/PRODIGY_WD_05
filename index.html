@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Weather App</title>
+      <link rel="stylesheet" href="style.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+      />
+    </head>
+  </head>
+  <body>
+    <div class="video-container">
+      <video autoplay muted loop id="backgroundVideo">
+        <source src="vid1.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="container">
+      <h1>Weather App</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          id="locationInput"
+          placeholder="Enter a location"
+          autocomplete="off"
+        />
+        <button onclick="getWeatherByLocation()">Get Weather</button>
+        <button onclick="getWeatherByCurrentLocation()">
+          Get Weather by Current Location
+        </button>
+      </div>
+      <div id="weatherData" class="weather-data">
+        <!-- Weather information will be displayed here -->
+      </div>
+      <div id="errorMessage" class="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
